@@ -1,0 +1,51 @@
+given an array,sort its first half of the elements if the array length is odd,then consider middle element in the first half of array
+sample input-1
+5
+5 4 3 2 1
+sample output-1
+3 4 5 2 1
+
+
+source code:
+
+import java.util.*;
+class Sort
+{
+static void sort(int a[],int n)
+{
+int mid=n/2;
+if(n%2==0)
+{
+mid=mid;
+}
+else
+{
+mid=mid+1;
+}
+for(int i=0;i<mid;i++)
+{
+for(int j=i+1;j<mid;j++)
+{
+int t=a[i];
+a[i]=a[j];
+a[j]=t;
+}
+}
+}
+
+public static void main(String[] args)
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+sort(a,n);
+for(int i=0;i<n;i++)
+{
+System.out.print(a[i]+" ");
+}
+}
+}
