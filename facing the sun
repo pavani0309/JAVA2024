@@ -1,0 +1,10 @@
+giveb an array representing heights of buildings you have to count the building which will see 
+
+sample input:
+5
+6 2 7 4 10
+sample output:
+3
+
+source code:
+
