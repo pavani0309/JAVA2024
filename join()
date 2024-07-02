@@ -1,0 +1,18 @@
+write a program on join()
+
+source code:
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+       String s1[]={"platform","dependent","lang"};
+       String str1=String.join(" ",s1);
+       System.out.println(str1);
+       String str2=String.join("is",s1);
+       System.out.println(str2);
+       String str3=String.join("  ",s1);
+       System.out.println(str3);
+    }
+    
+}
